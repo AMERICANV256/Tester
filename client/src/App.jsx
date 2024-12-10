@@ -1,15 +1,14 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
+import { useState, useEffect, useRef } from "react";
+import useAuth from "./hooks/useAuth";
+import Login from "./components/usuario/Login";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const { auth, setAuth } = useAuth();
 
   return (
-    <>
-      <div>Vamos a ver que hacemos con los test!</div>
-    </>
+    <div>
+      <Login />
+    </div>
   );
 }
 
