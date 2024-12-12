@@ -24,6 +24,14 @@ module.exports = (sequelize) => {
           isEmail: true,
         },
       },
+      direccion: {
+        type: DataTypes.STRING,
+        defaultValue: null,
+      },
+      telefono: {
+        type: DataTypes.STRING,
+        defaultValue: null,
+      },
     },
     {
       timestamps: true,

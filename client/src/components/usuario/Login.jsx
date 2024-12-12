@@ -134,12 +134,22 @@ export default function Login({ handleCerrarModalLogin }) {
                 <strong className="detailedError">{errorMessage}</strong>
               </div>
             )}
-
-            <input type="submit" value="Ingresar" className="form-submit" />
+            <div className="buttonIngresarLogin">
+              <input
+                type="submit"
+                value="Ingresar"
+                className="form-registro-login"
+              />
+            </div>
           </form>
-          {/* <button onClick={handleMostrarModalRecover}>
-            <span style={{ color: "black" }}>¿Olvidaste tu contraeña?</span>
-          </button>
+          <div className="olvidasteTuContraseña">
+            <button
+              onClick={handleMostrarModalRecover}
+              className="button-Olvidaste"
+            >
+              <span style={{ color: "black" }}>¿Olvidaste tu contraeña?</span>
+            </button>
+          </div>
           {recover && (
             <div className="modal">
               <div className="modal-content">
@@ -148,33 +158,23 @@ export default function Login({ handleCerrarModalLogin }) {
                 />
               </div>
             </div>
-          )} */}
+          )}
 
           {showWelcomeMessage && (
             <div className="welcome-message">
-              <h2>Bienvenido a American Vial!</h2>
+              <img src={logo} alt="" />
+              <h2>Bienvenido a Tester!</h2>
             </div>
           )}
 
-          <div style={{ marginTop: "1rem" }}>
-            {/* <span
-              style={{
-                color: "black",
-                fontFamily: "merri",
-                fontSize: "1rem",
-              }}
+          <div className="buttonIngresarLogin">
+            <button
+              className="form-registro-login"
+              onClick={handleMostrarModalRegistro}
             >
-              ¿Aún no pertenecés a American Vial?
-            </span> */}
+              Registráte
+            </button>
           </div>
-
-          <button
-            className="submit-button"
-            style={{ color: "black" }}
-            onClick={handleMostrarModalRegistro}
-          >
-            Registráte
-          </button>
         </div>
       )}
 

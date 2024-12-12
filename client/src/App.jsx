@@ -7,7 +7,7 @@ function App() {
   const { auth, setAuth } = useAuth();
 
   return (
-    <div>
+    <div className="background-container">
       <div className="BackgroundLogo">
         <img className="Logo" src={Logo} alt="" />
       </div>

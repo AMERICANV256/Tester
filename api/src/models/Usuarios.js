@@ -87,3 +87,8 @@ module.exports = (sequelize) => {
     }
   );
 };
+
+// roles:
+// true: Administrador;
+// false: Equipo
+// null: Entrenador
