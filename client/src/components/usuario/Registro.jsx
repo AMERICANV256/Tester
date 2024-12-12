@@ -146,7 +146,7 @@ export default function Registro({ handleCerrarModalRegistro }) {
       <br />
       {showWelcomeMessage && (
         <div className="welcome-message">
-          <img src={logo} alt="Logo" />
+          {/* <img src={logo} alt="Logo" /> */}
           <p>Ya estás registrado en AMERICAN VIAL!</p>
         </div>
       )}

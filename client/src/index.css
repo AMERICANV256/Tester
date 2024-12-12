@@ -114,7 +114,7 @@ button:focus-visible {
   z-index: 1; 
   width: 100%;
   max-width: 400px; 
-  margin: -150px auto 0;
+  margin: -250px auto 0;
   padding: 20px;
   background: rgba(255, 255, 255, 0.8); 
   border-radius: 10px; 
